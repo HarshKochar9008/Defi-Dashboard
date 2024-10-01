@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #090909;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 40px;
+}
+
+header .logo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: #734DB0;
+}
+
+header .profile {
+  display: flex;
+  align-items: center;
+}
+
+header .profile button {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #7f53ac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .profile button:hover {
+  background-color: #6b3fa8;
+}
+
+header .profile .user-info {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dashboard {
+  padding: 20px 40px;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  color: #8e8e93;
+  margin-bottom: 30px;
+}
+
+.filter-buttons {
+  margin-right: 10px;
+  width: 500px;
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+}
+.filter-buttons button {
+  background-color: #333; /* Dark background color */
+  color: green; /* Text color */
+  padding: 5px 20px; /* Adjust padding for better spacing inside */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Round the corners */
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  background: none;
+}
+.filter-buttons button:hover {
+  background-color: #444;
+}
+
+.balance-chart {
+  margin-bottom: 40px;
+}
+
+.table-container {
+  background-color: #1c1c1e;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  padding: 15px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #2c2c2e;
+}
+
+.table-container td {
+  border-bottom: 1px solid #2c2c2e;
+}
+
+.table-container tr:last-child td {
+  border-bottom: none;
+}
+
+.table-container tr:hover {
+  background-color: #2a2a2c;
+}
+
+.table-container tr td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.table-container tr td:first-child img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.table-container .change-positive {
+  color: #4caf50;
+}
+
+.table-container .change-negative {
+  color: #f44336;
+}
+/* BalanceChart.css */
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+.bar-fill {
+  fill: url(#balanceGradient);
+}
+
+.chart-grid {
+  stroke-dasharray: 3 3;
+}
+
+/* Define the gradient */
+#balanceGradient {
+  stop {
+    stop-color: rgb(157, 0, 255);
+  }
+  stop:nth-child(2) {
+    stop-color: white;
+  }
+}
+  
